@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>main</title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			
+			//获得设备浏览器信息
+			var agent = navigator.userAgent.toLowerCase();
+			
+			//根据浏览器情况跳转到不同的页面
+			if(agent.indexOf('iphone') == -1 && agent.indexOf('android') == -1 ){
+				
+				location.href = 'PC/index.html';
+			} else{
+				
+				location.href = 'mobile/index.html';
+			}
+		</script>
+	</body>
+</html>
